@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow" data-publish>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Психолог в Ярославле – {{имя}}, очно и онлайн</title>
+<meta name="description" content="Психолог в Ярославле: консультации очно в кабинете и онлайн. Формат и стоимость встречи известны до записи, первая встреча – знакомство и разговор о вашем запросе.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="{{имя}} · психолог в Ярославле">
+<meta property="og:title" content="Психолог в Ярославле для тех, кто давно собирается">
+<meta property="og:description" content="Очно в кабинете или онлайн. Формат и цена – заранее, первая встреча – знакомство и ваш запрос.">
+<meta property="og:url" content="{{ссылка-сайта}}">
+<meta property="og:image" content="{{ссылка-сайта}}/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" as="image" href="assets/hero-m.webp" media="(max-width: 860px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/hero.webp" media="(min-width: 861px)" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2712%27 fill=%27none%27 stroke=%27%238fc1b0%27 stroke-width=%274%27/%3E%3Ccircle cx=%2716%27 cy=%274%27 r=%273.5%27 fill=%27%238fc1b0%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="vibe.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"{{имя}} – психолог","description":"Психолог в Ярославле: консультации очно и онлайн, формат и стоимость встречи известны до записи.","url":"{{ссылка-сайта}}","image":"{{ссылка-сайта}}/assets/og.jpg","telephone":"{{телефон}}","openingHours":"{{часы}}","address":{"@type":"PostalAddress","streetAddress":"{{адрес}}","addressLocality":"Ярославль","addressCountry":"RU"}}
+</script>
+<style>
+  /* ---- тема: тёмная палитра «ночной шалфей» (своя, вне каркаса), Lora + Manrope ---- */
+  .v-page {
+    --v-canvas: #172022; --v-surface: #1f2a2c;
+    --v-ink: #ecefe9; --v-ink-soft: #a3b0ad;
+    --v-accent: #8fc1b0; --v-accent-ink: #10201c;
+    --v-accent-deep: #9fd0bf;
+    --v-font-display: "Lora", Georgia, serif;
+    --v-font-text: "Manrope", "Segoe UI", system-ui, sans-serif;
+    --v-display-weight: 500;
+    --v-track-tight: -0.015em;
+    --v-shadow-color: 0 0 0;
+    --v-e1: 0 1px 2px rgb(var(--v-shadow-color) / .06), 0 8px 22px rgb(var(--v-shadow-color) / .08);
+    --v-e2: 0 2px 6px rgb(var(--v-shadow-color) / .08), 0 22px 54px rgb(var(--v-shadow-color) / .14);
+    --v-radius: 16px;
+    --v-t-xs: clamp(0.8125rem, 0.79rem + 0.15vw, 0.85rem);
+    --v-t-sm: clamp(0.9375rem, 0.9rem + 0.2vw, 1rem);
+    --v-section: clamp(3.5rem, 8vw, 7rem);
+  }
+  html, body { margin: 0; background: #172022; }
+  html { color-scheme: dark; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  .v-page .v-label { font-weight: 600; text-transform: none; letter-spacing: .01em; font-size: var(--v-t-sm); }
+  .v-page .v-btn { font-size: var(--v-t-sm); }
+  .v-page .v-display { line-height: 1.08; }
+  .q { color: var(--v-accent-deep); }
+  [id] { scroll-margin-top: 72px; }
+
+  /* ---- шапка ---- */
+  .bar { position: fixed; inset: 0 0 auto 0; z-index: 30; display: flex; align-items: center; justify-content: space-between; gap: var(--v-4);
+    padding: var(--v-3) var(--v-gutter); background: rgb(23 32 34 / .55); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); transition: background-color .3s var(--v-ease-out), box-shadow .3s var(--v-ease-out); }
+  .bar.is-scrolled { background: rgb(23 32 34 / .86); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--v-hair); }
+  .bar__mark { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-lg); text-decoration: none; display: inline-flex; align-items: baseline; gap: .45em; min-height: 44px; align-items: center; white-space: nowrap; }
+  .bar__mark small { font-family: var(--v-font-text); font-size: var(--v-t-sm); color: var(--v-ink-soft); font-weight: 500; }
+  .qnav { display: flex; gap: var(--v-5); font-size: var(--v-t-sm); }
+  .qnav a { text-decoration: none; color: var(--v-ink-soft); display: inline-flex; align-items: center; min-height: 44px; transition: color .16s var(--v-ease-out); }
+  @media (hover: hover) and (pointer: fine) { .qnav a:hover { color: var(--v-ink); } }
+  .bar__right { display: flex; align-items: center; gap: var(--v-4); }
+  .bar__tel { text-decoration: none; font-weight: 600; font-size: var(--v-t-sm); display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--v-2); white-space: nowrap; }
+  .bar .v-btn { padding: .7em 1.3em; }
+  @media (max-width: 1100px) { .qnav { display: none; } }
+  @media (max-width: 700px) {
+    .bar__tel, .bar__mark small { display: none; }
+    .bar__mark { font-size: 1.1rem; }
+    .bar .v-btn { padding: 0 1em; min-height: 44px; }
+  }
+
+  /* ---- 1 · hero: два кресла у окна, текст слева на стене ---- */
+  .hero__back img { position: absolute; max-width: none; width: 112%; height: 112%; left: -6%; top: -6%; object-fit: cover; object-position: 62% 50%; }
+  .hero__clock { position: absolute; inset: 0; display: block; }
+  .hero__col { position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: linear-gradient(to right, rgb(23 32 34 / .8) 0%, rgb(23 32 34 / .5) 36%, transparent 62%); }
+  .hero__copy { bottom: clamp(3.5rem, 10vh, 7rem); max-width: min(44rem, 88vw); }
+  .demo-for { display: inline-block; margin-bottom: var(--v-5); padding: .4em .9em; border-radius: 999px; background: rgb(31 42 44 / .85); box-shadow: inset 0 0 0 1px var(--v-hair); font-size: var(--v-t-xs); color: var(--v-ink-soft); }
+  .demo-for b { color: var(--v-ink); font-weight: 600; }
+  .hero__label { display: block; margin-bottom: var(--v-4); color: var(--v-accent-deep); }
+  .hero__copy .v-display { font-size: clamp(2.3rem, 1.3rem + 3.2vw, 4.2rem); line-height: 1.04; max-width: 17ch; }
+  .hero__copy .v-lede { margin-top: var(--v-5); max-width: 40ch; }
+  .v-page .hero__pluses { margin-top: 1.75rem; display: grid; grid-template-columns: max-content max-content; gap: var(--v-2) var(--v-5); font-size: var(--v-t-sm); }
+  .hero__pluses li { display: flex; gap: .55em; align-items: baseline; }
+  .hero__pluses li::before { content: ""; flex: none; width: .5em; height: .5em; border-radius: 50%; background: var(--v-accent); transform: translateY(-.1em); }
+  .hero__cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-6); margin-top: var(--v-6); }
+  .hero__tel { text-decoration: none; font-size: var(--v-t-sm); display: inline-flex; align-items: center; min-height: 44px; gap: .35em; }
+  .hero__tel b { font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .18em; }
+  .hero__note { position: absolute; z-index: 3; right: var(--v-gutter); top: clamp(5rem, 14vh, 9rem); text-align: right; display: grid; gap: .25em; max-width: 26ch; padding: var(--v-4) var(--v-5); border-radius: var(--v-radius); background: rgb(23 32 34 / .72); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
+  .hero__note .v-nums { font-family: var(--v-font-display); font-size: var(--v-t-lg); }
+  .hero__note span:last-child { font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .hero__five { bottom: clamp(4.5rem, 14vh, 9rem); max-width: min(40rem, 88vw); }
+  .hero__five .v-display { font-size: var(--v-t-2xl); max-width: 16ch; }
+  .hero__five .v-lede { margin-top: var(--v-4); max-width: 34ch; }
+  .hero__five ol { max-width: 30rem; display: flex; flex-wrap: wrap; gap: .5em 1em; margin: var(--v-5) 0 0; padding: 0; list-style: none; font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .hero__five ol li { display: inline-flex; align-items: baseline; gap: .4em; }
+  .hero__five ol b { font-family: var(--v-font-display); color: var(--v-accent-deep); }
+  @media (max-width: 1100px) { .v-page .hero__pluses { grid-template-columns: 1fr; } }
+  @media (max-width: 860px) {
+    .hero__back img { object-position: 50% 80%; }
+    .hero__col { background: linear-gradient(to bottom, rgb(23 32 34 / .86) 0%, rgb(23 32 34 / .6) 50%, transparent 80%); }
+    .hero__copy, .hero__five { bottom: auto; top: clamp(4.6rem, 9vh, 6rem); }
+    .demo-for { margin-bottom: var(--v-3); }
+    .hero__copy .v-display { font-size: clamp(1.9rem, 1.2rem + 3.4vw, 2.6rem); max-width: none; }
+    .hero__copy .v-lede { font-size: var(--v-t-base); margin-top: var(--v-3); }
+    .v-page .hero__pluses { display: none; }
+    .hero__label { margin-bottom: var(--v-2); }
+    .hero__cta { margin-top: var(--v-4); gap: var(--v-2) var(--v-5); }
+    .hero__note { display: none; }
+    .hero__five .v-display { font-size: var(--v-t-xl); }
+    /* на телефоне список – узкой колонкой слева, чтобы не закрывать часы на стене справа */
+    .hero__five ol { flex-direction: column; gap: .35em; max-width: 44%; }
+  }
+
+  /* ---- 2 · кто вы: портрет и факты ---- */
+  .about { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: var(--v-8) var(--v-9); align-items: start; }
+  .about__fig { position: sticky; top: clamp(5rem, 12vh, 7rem); aspect-ratio: 3 / 4; border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e2); background: var(--v-surface); max-width: 26rem; }
+  .about__fig img { width: 100%; height: 100%; object-fit: cover; }
+  .about__copy .v-label { display: block; margin-bottom: var(--v-4); }
+  .about__spec { margin-top: var(--v-3); font-size: var(--v-t-lg); color: var(--v-ink-soft); }
+  .facts { margin-top: var(--v-7); }
+  .facts li { padding: var(--v-5) 0; border-top: 1px solid var(--v-hair); display: grid; grid-template-columns: 9.5rem minmax(0, 1fr); gap: var(--v-1) var(--v-5); align-items: baseline; }
+  .facts li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .facts b { font-weight: 600; font-size: var(--v-t-sm); color: var(--v-accent-deep); }
+  .facts span { max-width: 52ch; text-wrap: pretty; }
+  .rule { margin-top: var(--v-7); padding: var(--v-5) var(--v-6); border-radius: var(--v-radius); background: var(--v-surface); box-shadow: var(--v-e1); display: grid; gap: var(--v-3); max-width: 44rem; }
+  .rule .v-label { color: var(--v-accent-deep); }
+  .rule p { font-family: var(--v-font-display); font-size: var(--v-t-lg); line-height: 1.4; text-wrap: pretty; }
+  @media (max-width: 860px) {
+    .about { grid-template-columns: 1fr; gap: var(--v-6); }
+    .about__fig { position: relative; top: auto; max-width: 20rem; aspect-ratio: 4 / 5; }
+    .facts li { grid-template-columns: 1fr; }
+    .rule { padding: var(--v-5); }
+  }
+
+  /* ---- 3 · с чем приходят: фирменный ход – круг разговора ---- */
+  .req { height: 100%; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: var(--v-8); align-items: center; padding: 5rem var(--v-gutter) var(--v-6); max-width: 82rem; margin-inline: auto; }
+  .req__head .v-label { display: block; margin-bottom: var(--v-4); }
+  .req__head p { margin-top: var(--v-4); color: var(--v-ink-soft); max-width: 42ch; text-wrap: pretty; }
+  .req__stack { position: relative; margin-top: var(--v-7); min-height: 12rem; }
+  .req__item { position: absolute; inset: 0 0 auto 0; display: grid; gap: var(--v-3); max-width: 38rem; }
+  .req__item blockquote { margin: 0; font-family: var(--v-font-display); font-size: var(--v-t-2xl); line-height: 1.12; letter-spacing: -0.015em; text-wrap: balance; }
+  .req__item p { color: var(--v-ink-soft); max-width: 44ch; text-wrap: pretty; }
+  .req__item .tag { font-size: var(--v-t-sm); font-weight: 600; color: var(--v-accent-deep); }
+  .circle { position: relative; justify-self: center; width: min(100%, 26rem); aspect-ratio: 1; }
+  .circle svg { width: 100%; height: 100%; display: block; overflow: visible; }
+  .circle__track { fill: none; stroke: var(--v-hair-strong); stroke-width: 1.5; }
+  .circle__arc { fill: none; stroke: var(--v-accent); stroke-width: 3; stroke-linecap: round; transform: rotate(-90deg); transform-origin: 200px 200px; }
+  .circle__dot { fill: var(--v-surface); stroke: var(--v-hair-strong); stroke-width: 1.5; transition: fill .4s var(--v-ease-out), stroke .4s var(--v-ease-out); }
+  .circle__dot.is-past { fill: var(--v-accent); stroke: var(--v-accent); }
+  .circle__dot.is-on { fill: var(--v-accent); stroke: var(--v-accent); }
+  .circle__halo { fill: var(--v-accent); opacity: 0; transition: opacity .4s var(--v-ease-out); }
+  .circle__halo.is-on { opacity: .16; }
+  .circle__mid { position: absolute; inset: 22%; display: grid; place-content: center; text-align: center; gap: .3em; }
+  .circle__mid b { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-xl); line-height: 1.15; }
+  .circle__mid span { font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  @media (max-width: 860px) {
+    .req { grid-template-columns: 1fr; grid-template-rows: auto minmax(0, 1fr); gap: var(--v-4); align-items: start; padding: 4.6rem var(--v-gutter) var(--v-5); }
+    .circle { width: min(62vw, 30svh); order: -1; justify-self: start; }
+    .circle__mid b { font-size: var(--v-t-base); }
+    .circle__mid span { display: none; }
+    .req__head p { display: none; }
+    .req__stack { margin-top: var(--v-4); }
+    .req__item blockquote { font-size: var(--v-t-xl); }
+    .req__item p { font-size: var(--v-t-sm); }
+  }
+  @media (max-width: 860px) and (max-height: 720px) { .req__item p { display: none; } }
+
+  /* ---- 4 · формат и стоимость ---- */
+  .fmt__head { max-width: 46rem; }
+  .fmt__head .v-label { display: block; margin-bottom: var(--v-4); }
+  .fmt__head p { margin-top: var(--v-4); color: var(--v-ink-soft); max-width: 50ch; text-wrap: pretty; }
+  .fmt { margin-top: var(--v-7); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: var(--v-7) var(--v-8); align-items: end; }
+  .fmt__card { display: grid; gap: var(--v-4); }
+  .fmt__fig { aspect-ratio: 4 / 5; border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e2); background: var(--v-surface); }
+  .fmt__card--online .fmt__fig { aspect-ratio: 16 / 10; }
+  .fmt__fig img { width: 100%; height: 100%; object-fit: cover; }
+  .fmt__card h3 { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-xl); line-height: 1.15; }
+  .fmt__card p { color: var(--v-ink-soft); max-width: 46ch; text-wrap: pretty; }
+  .fmt__price { display: flex; flex-wrap: wrap; gap: .3em 1.4em; padding-top: var(--v-3); border-top: 1px solid var(--v-hair); font-size: var(--v-t-sm); }
+  .fmt__price b { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-lg); color: var(--v-accent-deep); }
+  .first { margin-top: var(--v-9); display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: var(--v-6) var(--v-9); align-items: start; }
+  .first h3 { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-2xl); line-height: 1.1; max-width: 13ch; }
+  .steps { margin: 0; padding: 0 0 0 2.6rem; list-style: none; position: relative; }
+  .steps::before { content: ""; position: absolute; left: .55rem; top: .6rem; bottom: .6rem; width: 1px; background: var(--v-hair-strong); }
+  .steps li { position: relative; padding: 0 0 var(--v-6); display: grid; gap: var(--v-1); }
+  .steps li:last-child { padding-bottom: 0; }
+  .steps li::before { content: ""; position: absolute; left: -2.6rem; top: .35rem; width: 1.1rem; height: 1.1rem; border-radius: 50%; background: var(--v-canvas); box-shadow: inset 0 0 0 1px var(--v-hair-strong); }
+  .steps li::after { content: ""; position: absolute; left: calc(-2.6rem + .35rem); top: calc(.35rem + .35rem); width: .4rem; height: .4rem; border-radius: 50%; background: var(--v-accent); }
+  .steps b { font-weight: 600; font-size: var(--v-t-lg); }
+  .steps p { color: var(--v-ink-soft); max-width: 48ch; text-wrap: pretty; }
+  .cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-5); margin-top: var(--v-7); }
+  .cta span { color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 38ch; }
+  @media (max-width: 860px) {
+    .fmt, .first { grid-template-columns: 1fr; }
+    .fmt__fig, .fmt__card--online .fmt__fig { aspect-ratio: 16 / 11; }
+    .first { margin-top: var(--v-8); }
+  }
+
+  /* ---- 5 · отзывы и частые вопросы ---- */
+  .rev { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--v-5) var(--v-8); align-items: center; padding: var(--v-6) var(--v-7); border-radius: var(--v-radius); background: var(--v-surface); box-shadow: var(--v-e1); }
+  .rev .v-label { display: block; margin-bottom: var(--v-3); color: var(--v-accent-deep); }
+  .rev h2 { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-xl); line-height: 1.2; max-width: 30ch; }
+  .rev p { margin-top: var(--v-3); color: var(--v-ink-soft); max-width: 58ch; }
+  .faq { margin-top: var(--v-9); display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: var(--v-6) var(--v-9); align-items: start; }
+  .faq__head { position: sticky; top: clamp(5rem, 12vh, 7rem); }
+  .faq__head .v-label { display: block; margin-bottom: var(--v-4); }
+  .faq__head p { margin-top: var(--v-4); color: var(--v-ink-soft); max-width: 36ch; }
+  .faq details { border-top: 1px solid var(--v-hair); }
+  .faq details:last-child { border-bottom: 1px solid var(--v-hair); }
+  .faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: var(--v-5); padding: var(--v-5) 0; min-height: 44px; font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-lg); line-height: 1.25; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: ""; flex: none; width: .7rem; height: .7rem; border-right: 1.5px solid var(--v-accent-deep); border-bottom: 1.5px solid var(--v-accent-deep); transform: rotate(45deg) translate(-2px, -2px); transition: transform .2s var(--v-ease-out); }
+  .faq details[open] summary::after { transform: rotate(225deg) translate(-2px, -2px); }
+  .faq details p { padding: 0 0 var(--v-5); color: var(--v-ink-soft); max-width: 58ch; text-wrap: pretty; }
+  @media (hover: hover) and (pointer: fine) { .faq summary:hover { color: var(--v-accent-deep); } }
+  @media (max-width: 860px) {
+    .rev { grid-template-columns: 1fr; padding: var(--v-5); }
+    .faq { grid-template-columns: 1fr; margin-top: var(--v-8); }
+    .faq__head { position: static; }
+  }
+
+  /* ---- 6 · контакты, форма, карта ---- */
+  .book { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--v-7) var(--v-9); align-items: start; }
+  .book__head .v-label { display: block; margin-bottom: var(--v-4); }
+  .book__head p { margin-top: var(--v-4); color: var(--v-ink-soft); max-width: 42ch; }
+  .contacts { margin-top: var(--v-6); display: grid; gap: var(--v-2); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .contacts a.tel { font-family: var(--v-font-display); font-size: var(--v-t-xl); color: var(--v-ink); text-decoration: none; padding-block: .2em; justify-self: start; }
+  .contacts b { color: var(--v-ink); font-weight: 600; }
+  .map { margin-top: var(--v-6); border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e1); aspect-ratio: 16 / 10; background: var(--v-surface); position: relative; }
+  .map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .map__cap { margin-top: var(--v-2); font-size: var(--v-t-xs); color: var(--v-ink-soft); }
+  .form { padding: var(--v-7); border-radius: var(--v-radius); background: var(--v-surface); box-shadow: var(--v-e2); display: grid; gap: var(--v-5); }
+  .form h3 { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-xl); line-height: 1.15; }
+  .field { display: grid; gap: var(--v-2); }
+  .field label, .field legend { font-size: var(--v-t-sm); font-weight: 600; }
+  .field input, .field textarea { font: inherit; color: var(--v-ink); background: var(--v-canvas); border: 1px solid var(--v-hair-strong); border-radius: 10px; padding: .8em 1em; min-height: 48px; transition: border-color .16s var(--v-ease-out); }
+  .field textarea { min-height: 7rem; resize: vertical; }
+  .field input:focus, .field textarea:focus { outline: 2px solid var(--v-accent); outline-offset: 1px; border-color: var(--v-accent); }
+  .field small { font-size: var(--v-t-xs); color: var(--v-ink-soft); }
+  fieldset.field { border: 0; margin: 0; padding: 0; }
+  .seg { display: flex; flex-wrap: wrap; gap: var(--v-2); }
+  .seg label { position: relative; font-weight: 500; }
+  .seg input { position: absolute; opacity: 0; pointer-events: none; }
+  .seg span { display: inline-flex; align-items: center; min-height: 44px; padding: 0 1.1em; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--v-hair-strong); cursor: pointer; transition: background-color .16s var(--v-ease-out), color .16s var(--v-ease-out); }
+  .seg input:checked + span { background: var(--v-accent); color: var(--v-accent-ink); box-shadow: none; }
+  .seg input:focus-visible + span { outline: 2px solid var(--v-accent); outline-offset: 2px; }
+  .agree { display: flex; gap: .7em; align-items: flex-start; font-size: var(--v-t-xs); color: var(--v-ink-soft); }
+  .agree input { width: 1.15rem; height: 1.15rem; margin: .1em 0 0; accent-color: var(--v-accent); flex: none; }
+  .form .v-btn { justify-self: start; }
+  .v-page button.v-btn { background: var(--v-accent); color: var(--v-accent-ink); }
+  .form__status { font-size: var(--v-t-sm); color: var(--v-accent-deep); min-height: 1.5em; }
+  .form__status.is-err { color: #f0907e; }
+  @media (max-width: 860px) {
+    .book { grid-template-columns: 1fr; }
+    .form { padding: var(--v-5); }
+    .form .v-btn { justify-self: stretch; justify-content: center; }
+  }
+
+  /* ---- 7 · финал: кабинет вечером, футер внутри сцены ---- */
+  .close__back img { position: absolute; max-width: none; width: 112%; height: 112%; left: -6%; top: -6%; object-fit: cover; object-position: 64% 50%; }
+  .close__col { position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: linear-gradient(to right, rgb(23 32 34 / .9) 0%, rgb(23 32 34 / .78) 40%, rgb(23 32 34 / .3) 62%, transparent 78%); }
+  .close { position: relative; z-index: 3; height: 100%; display: grid; grid-template-rows: 1fr auto; padding: 0 var(--v-gutter);
+    background: radial-gradient(60rem 40rem at calc(var(--v-mx, .7) * 100%) calc(var(--v-my, .4) * 100%), rgb(143 193 176 / .08), transparent 60%); }
+  .close__inner { align-self: center; max-width: 44rem; padding-top: var(--v-9); }
+  .close__inner .v-display { font-size: var(--v-t-3xl); line-height: 1.04; max-width: 14ch; }
+  .close__inner p { margin-top: var(--v-5); color: var(--v-ink-soft); max-width: 40ch; text-wrap: pretty; }
+  .close__btns { margin-top: var(--v-6); display: flex; flex-wrap: wrap; gap: var(--v-3); }
+  .foot { display: grid; grid-template-columns: auto 1fr auto; gap: var(--v-3) var(--v-6); align-items: baseline; margin: 0 calc(-1 * var(--v-gutter)); padding: var(--v-6) var(--v-gutter); border-top: 1px solid var(--v-hair);
+    background: rgb(23 32 34 / .84); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); font-size: var(--v-t-xs); color: var(--v-ink-soft); }
+  .foot a { color: var(--v-ink-soft); }
+  @media (max-width: 860px) {
+    .close__back img { object-position: 74% 50%; }
+    .close__col { background: linear-gradient(to bottom, rgb(23 32 34 / .92) 0%, rgb(23 32 34 / .84) 55%, rgb(23 32 34 / .5) 100%); }
+    .close__inner { padding-top: var(--v-8); }
+    .close__inner .v-display { font-size: var(--v-t-2xl); max-width: none; }
+    .foot { grid-template-columns: 1fr; gap: var(--v-2); padding: var(--v-5) var(--v-gutter) calc(var(--v-5) + env(safe-area-inset-bottom)); }
+  }
+</style>
+</head>
+<body>
+<div class="v-page">
+  <span data-v-progress></span>
+
+  <header class="bar">
+    <a class="bar__mark" href="#top">{{имя}} <small>психолог</small></a>
+    <nav class="qnav" aria-label="Разделы">
+      <a href="#obo-mne">Обо мне</a>
+      <a href="#zaprosy">С чем приходят</a>
+      <a href="#format">Формат и цена</a>
+      <a href="#voprosy">Вопросы</a>
+      <a href="#kontakty">Контакты</a>
+    </nav>
+    <div class="bar__right">
+      <a class="bar__tel" href="tel:{{телефон}}">{{телефон}}</a>
+      <a class="v-btn" href="#forma">Записаться</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 1 · УЗНАВАНИЕ: два кресла у окна, оффер слева, кнопка над сгибом -->
+    <section id="top" data-v-act="pin" data-v-span="2.2" data-v-drift="#172022" aria-label="Психолог в Ярославле">
+      <div data-v-stage>
+        <div class="v-layer hero__back" data-v-parallax="-0.45">
+          <picture>
+            <source media="(max-width: 860px)" srcset="assets/hero-m.webp">
+            <img src="assets/hero.webp" alt="" width="1920" height="1080" fetchpriority="high">
+          </picture>
+          <!-- тот же кадр с часами на стене: проявляется к сцене «Пять вопросов перед первой встречей» -->
+          <picture class="hero__clock" data-v-cue="0.56 1 0.08 0" data-v-rise="0">
+            <source media="(max-width: 860px)" srcset="assets/hero-clock-m.webp">
+            <img src="assets/hero-clock.webp" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="hero__col" aria-hidden="true"></div>
+
+        <div class="hero__note" data-v-cue="0 0.6 0" data-v-rise="0">
+          <span class="v-label">Приём по записи</span>
+          <span class="v-nums">{{часы}}</span>
+          <span>В кабинете в Ярославле или онлайн</span>
+        </div>
+
+        <div class="v-copy v-copy--lead hero__copy" data-v-cue="0 0.62 0 0.1">
+          <span class="demo-for">Демо для <b>Кирилла</b> · по заказу «Сайт-визитка для психолога»</span>
+          <span class="v-label hero__label">{{имя}} · психолог в Ярославле</span>
+          <h1 class="v-display v-display--xl" data-v-kinetic="lines">Первая встреча с психологом без обязательств: просто поговорим…</h1>
+          <p class="v-lede">Расскажете, что беспокоит, – я объясню, как можем работать. Очно в Ярославле или онлайн, цена заранее.</p>
+          <ul class="hero__pluses" aria-label="Что важно знать">
+            <li>Формат и стоимость – до записи</li>
+            <li>Очно в кабинете или онлайн</li>
+            <li>Первая встреча – знакомство и ваш запрос</li>
+            <li>Всё сказанное остаётся между нами</li>
+          </ul>
+          <div class="hero__cta">
+            <a class="v-btn" href="#forma">Записаться</a>
+            <a class="hero__tel" href="tel:{{телефон}}">или позвоните <b>{{телефон}}</b></a>
+          </div>
+        </div>
+
+        <div class="v-copy v-copy--lead hero__five" data-v-cue="0.64 0.96 0.06 0.04">
+          <h2 class="v-display v-display--lg">Пять вопросов перед первой встречей</h2>
+          <p class="v-lede">Отвечаю на них здесь, чтобы на первую встречу вы пришли спокойнее.</p>
+          <ol>
+            <li><b>1</b>Кто вы?</li>
+            <li><b>2</b>С чем можно прийти?</li>
+            <li><b>3</b>Сколько стоит и как проходит?</li>
+            <li><b>4</b>Что ещё важно знать?</li>
+            <li><b>5</b>Как записаться?</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · ДОВЕРИЕ: обо мне – только факты от заказчика -->
+    <section class="v-section v-section--tight" data-v-act="flow" data-v-drift="#1b2527" id="obo-mne" aria-label="Обо мне">
+      <div class="v-wrap about">
+        <figure class="about__fig" data-v-reveal="up" data-v-reveal-at="0.08 0.45">
+          <img src="assets/portrait.webp" alt="Психолог в кресле в светлом кабинете" width="1200" height="1600" loading="lazy" decoding="async">
+        </figure>
+        <div class="about__copy" data-v-in data-v-stagger="70">
+          <span class="v-label"><span class="q">Вопрос 1</span> · Кто вы?</span>
+          <h2 class="v-display v-display--lg">{{имя}}</h2>
+          <p class="about__spec">{{специализация}}</p>
+          <ul class="facts">
+            <li><b>Образование</b><span>{{образование}}</span></li>
+            <li><b>Опыт</b><span>{{опыт}}</span></li>
+            <li><b>Как работаю</b><span>{{подход}}</span></li>
+          </ul>
+          <div class="rule">
+            <span class="v-label">Правило кабинета</span>
+            <p>Всё, что вы рассказываете, остаётся между нами. Можно говорить в своём темпе и не отвечать на вопрос, если пока не готовы.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 · УЗНАВАНИЕ СЕБЯ: с чем приходят – фирменный ход «круг разговора» -->
+    <section id="zaprosy" data-v-act="pin" data-v-span="3.2" data-v-drift="#172022" aria-label="С какими запросами работаю">
+      <div data-v-stage>
+        <div class="req">
+          <div class="req__copy">
+            <div class="req__head" data-v-cue="0 1 0 0" data-v-rise="0">
+              <span class="v-label"><span class="q">Вопрос 2</span> · С чем можно прийти?</span>
+              <h2 class="v-display v-display--md">Обычно начинают с одной фразы</h2>
+              <p>Не нужно заранее формулировать «запрос». Достаточно сказать, что не так, – дальше разберёмся вместе.</p>
+            </div>
+            <div class="req__stack">
+              <div class="req__item" data-v-cue="0 0.22 0 0.04">
+                <blockquote>«Тревожно, и непонятно почему»</blockquote>
+                <p>Тревога, беспокойство без видимой причины, напряжение, которое не отпускает даже в отпуске.</p>
+                <span class="tag">Тревога и напряжение</span>
+              </div>
+              <div class="req__item" data-v-cue="0.2 0.42 0.04 0.04">
+                <blockquote>«Устала так, что ничего не хочется»</blockquote>
+                <p>Выгорание, апатия, ощущение, что живёте на автомате и сил хватает только на обязательное.</p>
+                <span class="tag">Усталость и выгорание</span>
+              </div>
+              <div class="req__item" data-v-cue="0.4 0.62 0.04 0.04">
+                <blockquote>«Мы ссоримся по одному и тому же кругу»</blockquote>
+                <p>Отношения в паре и в семье: повторяющиеся конфликты, отдаление, трудные разговоры.</p>
+                <span class="tag">Отношения</span>
+              </div>
+              <div class="req__item" data-v-cue="0.6 0.82 0.04 0.04">
+                <blockquote>«Не могу пережить расставание»</blockquote>
+                <p>Потеря, развод, переезд, смена работы – когда привычная жизнь закончилась, а новая ещё не началась.</p>
+                <span class="tag">Потери и перемены</span>
+              </div>
+              <div class="req__item" data-v-cue="0.8 1 0.04 0">
+                <blockquote>«Не понимаю, чего хочу»</blockquote>
+                <p>Самооценка, решения, которые откладываются годами, ощущение, что живёте не свою жизнь.</p>
+                <span class="tag">Самооценка и выбор</span>
+              </div>
+            </div>
+          </div>
+          <div class="circle" id="circle" aria-hidden="true">
+            <svg viewBox="0 0 400 400">
+              <circle class="circle__track" cx="200" cy="200" r="170"/>
+              <circle class="circle__arc" id="arc" cx="200" cy="200" r="170"/>
+              <g id="dots"></g>
+            </svg>
+            <div class="circle__mid"><b id="circle-tag">Тревога</b><span id="circle-n">тема 1 из 5</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · ВЫБОР: формат и стоимость, первая встреча по шагам -->
+    <section class="v-section v-section--tight" data-v-act="flow" data-v-drift="#1b2527" id="format" aria-label="Формат и стоимость">
+      <div class="v-wrap">
+        <div class="fmt__head" data-v-in data-v-stagger="70">
+          <span class="v-label"><span class="q">Вопрос 3</span> · Сколько стоит и как проходит?</span>
+          <h2 class="v-display v-display--lg">Очно или онлайн – цена известна до записи</h2>
+          <p>Одна встреча длится {{длительность}}. Формат можно менять: начать в кабинете и продолжить онлайн, если так удобнее.</p>
+        </div>
+        <div class="fmt">
+          <article class="fmt__card" data-v-in data-v-stagger="70">
+            <figure class="fmt__fig" data-v-reveal="up" data-v-reveal-at="0.05 0.4"><img src="assets/kabinet.webp" alt="Кабинет: два кресла, столик с водой, окно и растение" width="1200" height="1600" loading="lazy" decoding="async"></figure>
+            <h3>Очно, в кабинете</h3>
+            <p>Тихая комната в Ярославле: {{адрес}}. Два кресла, вода на столе, никто не зайдёт посреди разговора.</p>
+            <div class="fmt__price"><span>Стоимость <b>уточнить</b></span><span>{{длительность}}</span></div>
+          </article>
+          <article class="fmt__card fmt__card--online" data-v-in data-v-stagger="70">
+            <figure class="fmt__fig" data-v-reveal="left" data-v-reveal-at="0.05 0.4"><img src="assets/online.webp" srcset="assets/online-900.webp 900w, assets/online.webp 1600w" sizes="(max-width: 860px) 100vw, 50vw" alt="Стол у окна: ноутбук, наушники и чашка чая" width="1600" height="900" loading="lazy" decoding="async"></figure>
+            <h3>Онлайн, по видеосвязи</h3>
+            <p>Из дома, из другого города, в обеденный перерыв. Нужны наушники и место, где вас не услышат.</p>
+            <div class="fmt__price"><span>Стоимость <b>уточнить</b></span><span>{{длительность}}</span></div>
+          </article>
+        </div>
+        <div class="first">
+          <h3 data-v-in data-v-in-self>Как проходит первая встреча</h3>
+          <div data-v-in data-v-stagger="70">
+            <ol class="steps">
+              <li><b>Вы рассказываете, с чем пришли</b><p>В своём темпе и с чего угодно. Готовиться и подбирать слова не нужно.</p></li>
+              <li><b>Я задаю вопросы и объясняю, как могу помочь</b><p>Чтобы стало понятно, что происходит и с чего имеет смысл начать.</p></li>
+              <li><b>Договариваемся о формате и частоте</b><p>Или вы берёте паузу подумать. Решение о продолжении – за вами.</p></li>
+            </ol>
+            <div class="cta">
+              <a class="v-btn" href="#forma">Записаться</a>
+              <span>Напишите пару слов о том, что беспокоит, и я предложу время.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · СОМНЕНИЯ: отзывы (место под присланные) и частые вопросы -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#172022" id="voprosy" aria-label="Отзывы и частые вопросы">
+      <div class="v-wrap">
+        <div class="rev" data-v-in data-v-in-self>
+          <div>
+            <span class="v-label">Отзывы</span>
+            <h2>Здесь будут отзывы ваших клиентов</h2>
+            <p>Пришлите их текстом или скриншотами – опубликуем только с согласия клиентов и без фамилий.</p>
+          </div>
+        </div>
+        <div class="faq">
+          <div class="faq__head" data-v-in data-v-stagger="70">
+            <span class="v-label"><span class="q">Вопрос 4</span> · Что ещё важно знать?</span>
+            <h2 class="v-display v-display--md">Частые вопросы</h2>
+            <p>Если вашего вопроса здесь нет – задайте его в заявке, отвечу до записи.</p>
+          </div>
+          <div data-v-in data-v-stagger="60">
+            <details>
+              <summary>Как понять, что мне нужен психолог?</summary>
+              <p>Если что-то беспокоит дольше пары недель, мешает спать, работать или общаться с близкими – этого достаточно, чтобы прийти. Не обязательно ждать, пока станет совсем плохо.</p>
+            </details>
+            <details>
+              <summary>Что будет на первой встрече?</summary>
+              <p>Вы рассказываете, что происходит, я задаю вопросы. В конце обсуждаем, как может выглядеть работа, и вы решаете, продолжать ли.</p>
+            </details>
+            <details>
+              <summary>Сколько встреч понадобится?</summary>
+              <p>Зависит от запроса. Иногда хватает нескольких встреч, иногда работа идёт дольше. Ориентир обсудим на первой встрече и будем сверяться по ходу.</p>
+            </details>
+            <details>
+              <summary>Онлайн работает так же, как очно?</summary>
+              <p>Для большинства запросов – да. Важно найти место, где вас не услышат, и стабильный интернет. Формат можно менять по ходу работы.</p>
+            </details>
+            <details>
+              <summary>Кто узнает, о чём мы говорим?</summary>
+              <p>Никто. Содержание встреч конфиденциально, имя и контакты не передаются третьим лицам.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · ДЕЙСТВИЕ: заявка, контакты, карта -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#1b2527" id="kontakty" aria-label="Запись и контакты">
+      <div class="v-wrap book">
+        <div class="book__head" data-v-in data-v-stagger="70">
+          <span class="v-label"><span class="q">Вопрос 5</span> · Как записаться?</span>
+          <h2 class="v-display v-display--md">Оставьте заявку – я предложу время</h2>
+          <p>Отвечаю в течение рабочего дня. Можно сразу написать или позвонить.</p>
+          <div class="contacts">
+            <a class="tel" href="tel:{{телефон}}">{{телефон}}</a>
+            <span><b>{{адрес}}</b>, Ярославль</span>
+            <span>{{часы}}, приём по записи</span>
+            <a href="{{telegram}}" target="_blank" rel="noopener">Написать в Telegram</a>
+          </div>
+          <div class="map">
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=39.893787%2C57.626569&amp;z=13" title="Карта: Ярославль" loading="lazy" allowfullscreen></iframe>
+          </div>
+          <p class="map__cap">Метку поставим на адрес кабинета.</p>
+        </div>
+
+        <form class="form" id="forma" novalidate data-v-in data-v-in-self>
+          <h3>Заявка на консультацию</h3>
+          <div class="field">
+            <label for="f-name">Как к вам обращаться</label>
+            <input id="f-name" name="name" type="text" autocomplete="given-name" required>
+          </div>
+          <div class="field">
+            <label for="f-contact">Телефон или ник в Telegram</label>
+            <input id="f-contact" name="contact" type="text" autocomplete="tel" required>
+            <small>Свяжусь удобным для вас способом</small>
+          </div>
+          <fieldset class="field">
+            <legend>Формат</legend>
+            <div class="seg">
+              <label><input type="radio" name="format" value="Очно" checked><span>Очно</span></label>
+              <label><input type="radio" name="format" value="Онлайн"><span>Онлайн</span></label>
+              <label><input type="radio" name="format" value="Пока не знаю"><span>Пока не знаю</span></label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="f-msg">Что беспокоит <span class="v-soft">(необязательно)</span></label>
+            <textarea id="f-msg" name="message" rows="4"></textarea>
+          </div>
+          <label class="agree"><input type="checkbox" name="agree" required><span>Согласен(на) на обработку персональных данных по <a href="{{политика}}">политике конфиденциальности</a></span></label>
+          <button class="v-btn" type="submit">Записаться</button>
+          <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- 7 · ФИНАЛ: кабинет вечером, реплика держится, футер внутри сцены -->
+    <section data-v-act="pin" data-v-span="1.3" data-v-drift="#172022" id="final" aria-label="Запись на консультацию">
+      <div data-v-stage>
+        <div class="v-layer close__back" data-v-parallax="-0.3">
+          <img src="assets/final.webp" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+        </div>
+        <div class="close__col" aria-hidden="true"></div>
+        <div class="close" data-v-spotlight>
+          <div class="close__inner">
+            <div data-v-cue="0.04">
+              <h2 class="v-display v-display--xl">Можно начать с одного сообщения</h2>
+              <p>Напишите, что беспокоит, – отвечу, предложу время и формат. Решать, приходить ли, будете уже после.</p>
+              <div class="close__btns">
+                <a class="v-btn" href="#forma" data-v-magnet="0.22" data-v-rise="0">Записаться</a>
+                <a class="v-btn v-btn--ghost" href="tel:{{телефон}}">Позвонить</a>
+              </div>
+            </div>
+          </div>
+          <footer class="foot">
+            <span>{{имя}} · психолог · Ярославль</span>
+            <span data-slot-optional>{{статус: самозанятый / ИП}} · ИНН {{ИНН}}</span>
+            <a href="{{политика}}">Политика конфиденциальности</a>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="vibe.js"></script>
+<script>
+  if (window.matchMedia('(max-width: 860px)').matches) {
+    document.getElementById('top').setAttribute('data-v-span', '1.7');
+    document.getElementById('zaprosy').setAttribute('data-v-span', '2.7');
+  }
+  Vibe.mount(document.querySelector('.v-page'));
+
+  // Шапка: подложка после 40 px прокрутки.
+  (function () {
+    var bar = document.querySelector('.bar'), on = null;
+    function tick() { var s = window.scrollY > 40; if (s !== on) { on = s; bar.classList.toggle('is-scrolled', s); } }
+    window.addEventListener('scroll', tick, { passive: true }); tick();
+  })();
+
+  // Фирменный ход: круг разговора. Дуга растёт с --v-p акта «С чем можно прийти?»,
+  // пять точек на круге – пять тем, активная подсвечена и названа в центре.
+  (function () {
+    var act = document.getElementById('zaprosy'), arc = document.getElementById('arc'), dotsG = document.getElementById('dots');
+    if (!act || !arc) return;
+    var tags = ['Тревога', 'Выгорание', 'Отношения', 'Перемены', 'Выбор'];
+    var R = 170, C = 2 * Math.PI * R, ns = 'http://www.w3.org/2000/svg', dots = [], halos = [];
+    arc.style.strokeDasharray = C.toFixed(1);
+    arc.style.strokeDashoffset = C.toFixed(1);
+    for (var i = 0; i < 5; i++) {
+      var a = -Math.PI / 2 + (i + 0.5) / 5 * 2 * Math.PI, x = 200 + R * Math.cos(a), y = 200 + R * Math.sin(a);
+      var h = document.createElementNS(ns, 'circle'); h.setAttribute('cx', x); h.setAttribute('cy', y); h.setAttribute('r', 22); h.setAttribute('class', 'circle__halo');
+      var d = document.createElementNS(ns, 'circle'); d.setAttribute('cx', x); d.setAttribute('cy', y); d.setAttribute('r', 9); d.setAttribute('class', 'circle__dot');
+      dotsG.appendChild(h); dotsG.appendChild(d); dots.push(d); halos.push(h);
+    }
+    var tag = document.getElementById('circle-tag'), num = document.getElementById('circle-n'), last = -1;
+    function set(s) {
+      if (s === last) return; last = s;
+      dots.forEach(function (d, i) { d.classList.toggle('is-on', i === s); d.classList.toggle('is-past', i < s); });
+      halos.forEach(function (h, i) { h.classList.toggle('is-on', i === s); });
+      tag.textContent = tags[s]; num.textContent = 'тема ' + (s + 1) + ' из 5';
+    }
+    var live = false, lastP = -1;
+    function tick() {
+      var p = parseFloat(getComputedStyle(act).getPropertyValue('--v-p')) || 0;
+      if (p !== lastP) {
+        lastP = p;
+        arc.style.strokeDashoffset = (C * (1 - Math.min(1, Math.max(0, p)))).toFixed(1);
+        set(p < 0.21 ? 0 : p < 0.41 ? 1 : p < 0.61 ? 2 : p < 0.81 ? 3 : 4);
+      }
+      if (live) requestAnimationFrame(tick);
+    }
+    new IntersectionObserver(function (es) { live = es[0].isIntersecting; if (live) tick(); }).observe(act);
+    set(0);
+  })();
+
+  // Форма: в демо заявка никуда не уходит – показываем, что будет на готовом сайте.
+  (function () {
+    var f = document.getElementById('forma'), st = document.getElementById('form-status');
+    if (!f) return;
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var miss = ['name', 'contact'].filter(function (n) { return !f.elements[n].value.trim(); });
+      if (miss.length) { st.classList.add('is-err'); st.textContent = 'Заполните имя и телефон или ник в Telegram.'; f.elements[miss[0]].focus(); return; }
+      if (!f.elements.agree.checked) { st.classList.add('is-err'); st.textContent = 'Отметьте согласие на обработку данных.'; f.elements.agree.focus(); return; }
+      st.classList.remove('is-err');
+      st.textContent = 'Это демо-версия: на готовом сайте заявка придёт психологу в Telegram или на почту.';
+    });
+  })();
+</script>
+</body>
+</html>
